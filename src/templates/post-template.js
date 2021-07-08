@@ -1,6 +1,7 @@
 // @flow strict
 import React from 'react';
 import { graphql } from 'gatsby';
+import NavHeader from '../components/NavHeader';
 import Layout from '../components/Layout';
 import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
@@ -24,13 +25,16 @@ const PostTemplate = ({ data }: Props) => {
   const socialImageUrl = socialImage?.publicURL;
 
   return (
-    <Layout
-      title={`${postTitle} - ${siteTitle}`}
-      description={metaDescription}
-      socialImage={socialImageUrl}
-    >
-      <Post post={data.mdx} />
-    </Layout>
+    <>
+      <NavHeader />
+      <Layout
+        title={`${postTitle} - ${siteTitle}`}
+        description={metaDescription}
+        socialImage={socialImageUrl}
+      >
+        <Post post={data.mdx} />
+      </Layout>
+    </>
   );
 };
 

@@ -85,7 +85,9 @@
     "react": "^17.0.2",
     "react-disqus-comments": "^1.4.0",
     "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0"
+    "react-headroom": "^3.1.1",
+    "react-helmet": "^6.1.0",
+    "react-toggle": "^4.1.2"
   },
   "devDependencies": {
     "@babel/core": "7.14.6",

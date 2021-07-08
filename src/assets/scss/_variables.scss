@@ -5,16 +5,73 @@
 
 // Colors
 $color-base: #222;
-$color-primary: #5D93FF;
-$color-secondary: #F7A046;
+$color-primary: #5d93ff;
+$color-secondary: #f7a046;
+$color-primary-light: lighten($color-primary, 12%);
+$color-secondary-light: lighten($color-secondary, 12%);
 
-$color-white: #FFF;
+$color-white: #fff;
 $color-gray: lighten($color-base, 40%);
 $color-gray-border: lighten($color-base, 77%);
 $color-gray-bg: lighten($color-base, 79%);
+$color-gray-shadow: lighten($color-base, 60%);
+
+:root {
+  --color-background: #fff;
+  --color-base: #{$color-base};
+  --color-primary: #{$color-primary};
+  --color-secondary: #{$color-secondary};
+  --color-secondary-green: #{$color-secondary};
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-gray: #{lighten($color-base, 35%)};
+  --color-gray-shadow: #{$color-gray-shadow};
+  --color-gray-light-shadow: #{lighten($color-base, 70%)};
+  --color-gray-border: #{lighten($color-base, 75%)};
+  --color-gray-bg: #{lighten($color-base, 82%)};
+
+  --color-highlight-code-line: #{lighten($color-primary, 50%)};
+  --color-highlight-code-line-border: #{$color-primary};
+  --color-emph-special: #{darken($color-secondary, 8%)};
+
+  background-color: var(--color-background);
+}
+
+:root.dark {
+  --color-background: #222;
+  --color-base: #eee;
+  --color-primary: #{$color-secondary-light};
+  --color-secondary: #{$color-primary-light};
+  --color-secondary-green: #{$color-secondary-light};
+  --color-white: #000;
+  --color-black: #fff;
+
+  --color-gray: #{invert(lighten($color-base, 30%))};
+  --color-gray-shadow: #{invert(lighten($color-base, 60%))};
+  --color-gray-light-shadow: #{invert(lighten($color-base, 70%))};
+  --color-gray-border: #{invert(lighten($color-base, 57%))};
+  --color-gray-bg: #{invert(lighten($color-base, 80%))};
+
+  --color-highlight-code-line: #{lighten($color-secondary, 55%)};
+  --color-highlight-code-line-border: #{$color-secondary};
+  --color-emph-special: #{$color-secondary};
+}
+
+$color-base: var(--color-base);
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+
+$color-white: var(--color-white);
+// $color-gray: var(--color-gray);
+$color-gray-shadow: var(--color-gray-shadow);
+$color-gray-light-shadow: var(--color-gray-light-shadow);
+$color-gray-border: var(--color-gray-border);
+$color-gray-bg: var(--color-gray-bg);
 
 // Typographic
-$typographic-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$typographic-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
 
 $typographic-root-font-size: 100;
 $typographic-base-font-size: 16px;
@@ -26,7 +83,10 @@ $typographic-base-font-color: $color-base;
 $typographic-link-p-font-color: $color-primary;
 $typographic-link-s-font-color: $color-secondary;
 
-$typographic-leading: round(16 * math.div($typographic-root-font-size, 100) * $typographic-base-line-height);
+$typographic-leading: round(
+  16 * math.div($typographic-root-font-size, 100) *
+    $typographic-base-line-height
+);
 
 // Buttons
 $button-height: 35px;
