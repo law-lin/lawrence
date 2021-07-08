@@ -3,41 +3,45 @@
 module.exports = {
   url: 'https://lumen.netlify.com',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-  copyright: '© All rights reserved.',
+  title: 'lawrencelin.me',
+  subtitle: 'Software developer. I blog about all things web development.',
+  copyright: '© Lawrence Lin 2021',
   disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
   menu: [
     {
-      label: 'Articles',
-      path: '/'
+      label: 'Blog',
+      path: '/',
     },
     {
       label: 'About me',
-      path: '/pages/about'
+      path: '/pages/about',
+    },
+    {
+      label: 'Projects',
+      path: '/pages/projects',
     },
     {
       label: 'Contact me',
-      path: '/pages/contacts'
-    }
+      path: '/pages/contacts',
+    },
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Lawrence Lin',
+    photo: '/photo.png',
+    bio: 'Software developer. I blog about all things web development.',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'lawrencelin101@gmail.com',
+      facebook: '',
+      telegram: '',
+      twitter: '',
+      github: 'law-lin',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'lawrencelin101',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: '',
@@ -45,6 +49,6 @@ module.exports = {
       youtube: '',
       soundcloud: '',
       medium: '',
-    }
-  }
+    },
+  },
 };

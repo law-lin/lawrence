@@ -44,6 +44,16 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-page-creator',
+      options: {
+        path: `${__dirname}/content`,
+        name: 'pages',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mdx-frontmatter',
+    },
+    {
       resolve: 'gatsby-plugin-feed',
       options: {
         query: `
@@ -59,8 +69,8 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.edges.map((edge) => ({
+            serialize: ({ query: { site, allMdx } }) =>
+              allMdx.edges.map((edge) => ({
                 ...edge.node.frontmatter,
                 description: edge.node.frontmatter.description,
                 date: edge.node.frontmatter.date,
@@ -70,7 +80,7 @@ module.exports = {
               })),
             query: `
               {
-                allMarkdownRemark(
+                allMdx(
                   limit: 1000,
                   sort: { order: DESC, fields: [frontmatter___date] },
                   filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
@@ -103,9 +113,10 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cms-paths',
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        plugins: [
+        extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
           'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-katex',
