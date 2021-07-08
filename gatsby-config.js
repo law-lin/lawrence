@@ -44,13 +44,6 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-page-creator',
-      options: {
-        path: `${__dirname}/content`,
-        name: 'pages',
-      },
-    },
-    {
       resolve: 'gatsby-plugin-mdx-frontmatter',
     },
     {
@@ -76,7 +69,7 @@ module.exports = {
                 date: edge.node.frontmatter.date,
                 url: site.siteMetadata.site_url + edge.node.fields.slug,
                 guid: site.siteMetadata.site_url + edge.node.fields.slug,
-                custom_elements: [{ 'content:encoded': edge.node.html }],
+                custom_elements: [{ 'content:encoded': edge.node.body }],
               })),
             query: `
               {
@@ -87,7 +80,7 @@ module.exports = {
                 ) {
                   edges {
                     node {
-                      html
+                      body
                       fields {
                         slug
                       }
@@ -115,7 +108,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
-        extensions: [`.md`, `.mdx`],
+        extensions: ['.md', '.mdx'],
         gatsbyRemarkPlugins: [
           'gatsby-remark-relative-images',
           {

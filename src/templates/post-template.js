@@ -8,7 +8,7 @@ import type { Mdx } from '../types';
 
 type Props = {
   data: {
-    Mdx: Mdx,
+    mdx: Mdx,
   },
 };
 

@@ -38,7 +38,7 @@ export type Node = {
       publicURL: string,
     },
   },
-  html: string,
+  body: string,
   id: string,
 };
 
