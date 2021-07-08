@@ -18,6 +18,7 @@ const Post = ({ post }: Props) => {
   const { tagSlugs, slug } = post.fields;
   const { tags, title, date } = post.frontmatter;
 
+  console.log(post);
   return (
     <div className={styles['post']}>
       <Link className={styles['post__home-button']} to='/'>
@@ -25,7 +26,7 @@ const Post = ({ post }: Props) => {
       </Link>
 
       <div className={styles['post__content']}>
-        <Content body={body} title={title} />
+        <Content body={body} title={title} date={date} />
       </div>
 
       <div className={styles['post__footer']}>

@@ -21,11 +21,9 @@
 
       &--disable {
         pointer-events: none;
-        color: lighten($color-gray, 20%);
+        color: $color-gray;
       }
-
     }
-
   }
 
   &__next {
@@ -44,11 +42,8 @@
 
       &--disable {
         pointer-events: none;
-        color: lighten($color-gray, 20%);
+        color: $color-gray;
       }
-
     }
-
   }
-
 }

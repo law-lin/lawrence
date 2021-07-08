@@ -6,6 +6,7 @@ import Layout from '../components/Layout';
 import Post from '../components/Post';
 import { useSiteMetadata } from '../hooks';
 import type { Mdx } from '../types';
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 
 type Props = {
   data: {
@@ -23,6 +24,8 @@ const PostTemplate = ({ data }: Props) => {
   } = frontmatter;
   const metaDescription = postDescription || siteSubtitle;
   const socialImageUrl = socialImage?.publicURL;
+
+  deckDeckGoHighlightElement();
 
   return (
     <>
