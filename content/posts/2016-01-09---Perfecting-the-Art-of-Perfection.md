@@ -4,7 +4,7 @@ title: Perfecting the Art of Perfection
 slug: perfecting-the-art-of-perfection
 socialImage: /media/image-2.jpg
 draft: false
-date: 2016-09-01T23:46:37.121Z
+date: 2021-07-08T06:43:34.555Z
 description: " metus vitae pharetra auctor, sem massa mattis sem, at interdum
   magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et
   ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit
