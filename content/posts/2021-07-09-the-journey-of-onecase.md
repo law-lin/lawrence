@@ -21,7 +21,7 @@ The first one we thought of was Ideagrate, a social planning app to streamline t
 Here's one of our very early, messy sketches of what it would look like.
 
 
-![Ideagrate](/media/ideagrate.PNG)
+![Ideagrate](/media/ideagrate.png)
 
 
 
