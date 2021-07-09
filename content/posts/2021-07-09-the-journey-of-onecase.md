@@ -3,7 +3,7 @@ template: post
 title: The Journey of OneCase
 slug: journey-of-onecase
 socialImage: /media/onecase-logo.png
-draft: true
+draft: false
 date: 2021-07-09T01:02:56.751Z
 description: From nothing to something
 category: Projects
