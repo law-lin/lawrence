@@ -17,9 +17,9 @@ I'll give you my answer - there is no meaning. At an early part of my life (teen
 
 But isn't that pointless? Trying to find meaning when you know that you won't find it? Isn't that _absurd_?
 
-I never knew there was a term for this until I came across a philosophy book that mentioned [absurdism](https://en.wikipedia.org/wiki/Absurdism). As I read more and more about absurdism, I was fascinated with the theory and decided to read Albert Camus' _The Stranger_, a book well known for its emphasis on the meaningless of life and the irrationality of the world.
+I never knew there was a term for this until I came across a philosophy book that mentioned [absurdism](https://en.wikipedia.org/wiki/Absurdism). As I read more and more about absurdism, I was fascinated with the theory and decided to read Albert Camus' _The Stranger_, a book well known for its themes on the meaningless of life and the irrationality of the world.
 
-#### Some spoilers ahead!
+**Some spoilers ahead!**
 
 The very first two sentences of the story hooked me in immediately:
 
