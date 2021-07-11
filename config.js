@@ -4,7 +4,8 @@ module.exports = {
   url: 'https://lumen.netlify.com',
   pathPrefix: '/',
   title: 'lawrencelin.me',
-  subtitle: 'Software developer. I blog about all things web development.',
+  subtitle:
+    'Software developer. I blog about all things web development, technology, and sometimes random philosophical ideas',
   copyright: '© Lawrence Lin 2021',
   disqusShortname: '',
   postsPerPage: 4,
