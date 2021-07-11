@@ -36,7 +36,7 @@ We'll also need to change `plugins` to `gatsbyRemarkPlugins`.
 
 ## 3. Replace Markdown Remark Queries and Values
 
-This is one of the more annoying parts but if you leverage your text editor's Find and Repalce capabilities, it shouldn't be too bad.
+This is one of the more annoying parts but if you leverage your text editor's Find and Replace capabilities, it shouldn't be too bad.
 
 If you're using VS Code, you can do `Ctrl+Shift+F` to enable Search across all files. Enter in `allMarkdownRemark` and click on the arrow to the left of the text box to Replace the searched text. In case of case sensitive characters, click on the two options (Match Case and Match Whole Word) in the search input. Replace `allMarkdownRemark` with `allMdx`.
 
