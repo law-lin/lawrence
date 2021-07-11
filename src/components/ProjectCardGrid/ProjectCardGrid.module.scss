@@ -1,0 +1,8 @@
+.project-card-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  @media screen and (max-width: 959px) {
+    grid-template-columns: auto;
+  }
+}
