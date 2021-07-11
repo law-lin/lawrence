@@ -1,12 +1,16 @@
 import React, { useRef, useEffect } from 'react';
 import styles from './Page.module.scss';
+import classnames from 'classnames/bind';
 
 type Props = {
   title?: string,
-  children: React.Node
+  subtitle?: string,
+  children: React.Node,
 };
 
-const Page = ({ title, children }: Props) => {
+const cx = classnames.bind(styles);
+
+const Page = ({ title, subtitle, children }: Props) => {
   const pageRef = useRef();
 
   useEffect(() => {
@@ -16,10 +20,18 @@ const Page = ({ title, children }: Props) => {
   return (
     <div ref={pageRef} className={styles['page']}>
       <div className={styles['page__inner']}>
-        { title && <h1 className={styles['page__title']}>{title}</h1>}
-        <div className={styles['page__body']}>
-          {children}
-        </div>
+        {title && (
+          <h1
+            className={cx({
+              page__title: true,
+              'with-subtitle': !!subtitle,
+            })}
+          >
+            {title}
+          </h1>
+        )}
+        {subtitle && <h2 className={styles['page__subtitle']}>{subtitle}</h2>}
+        <div className={styles['page__body']}>{children}</div>
       </div>
     </div>
   );

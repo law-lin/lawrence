@@ -11,10 +11,12 @@ const TagsListTemplate = () => {
   const { title, subtitle } = useSiteMetadata();
   const tags = useTagsList();
 
+  tags.sort((a, b) => b.totalCount - a.totalCount);
+
   return (
     <Layout title={`Tags - ${title}`} description={subtitle}>
       <Sidebar />
-      <Page title="Tags">
+      <Page title='Tags' subtitle={<Link to='/'>← Back to Home</Link>}>
         <ul>
           {tags.map((tag) => (
             <li key={tag.fieldValue}>
