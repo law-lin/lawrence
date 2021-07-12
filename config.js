@@ -28,10 +28,6 @@ module.exports = {
       label: 'Tags',
       path: '/tags',
     },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts',
-    },
   ],
   author: {
     name: 'Lawrence Lin',

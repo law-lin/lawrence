@@ -64,3 +64,5 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 -  if (node.internal.type === `MarkdownRemark`) {
 +  if (node.internal.type === `Mdx`) {
 ```
+
+This isn't complete yet, to be continued!
