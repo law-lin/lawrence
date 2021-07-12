@@ -27,7 +27,7 @@ The very first two sentences of the story hooked me in immediately:
 	<blockquote>
 		<p>Maman died today. Or yesterday maybe, I don't know.</p>
 		<footer>
-			<cite>—Mersault</cite>
+			<cite>—Meursault</cite>
 		</footer>
 	</blockquote>
 </figure>
