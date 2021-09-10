@@ -6,7 +6,7 @@ socialImage: /media/supabase.png
 draft: false
 date: 2021-08-04T19:26:18.633Z
 description: Learn how to authenticate users with usernames using Supabase Auth
-  and Serverless
+  and Serverless.
 category: Web Development
 tags:
   - Web Development
