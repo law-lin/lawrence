@@ -6,7 +6,7 @@ const ProjectCardGrid = () => {
   return (
     <div className={styles['project-card-grid']}>
       <ProjectCard
-        href='https://linktr.ee/usesparkappe'
+        href='https://linktr.ee/usesparkapp'
         thumbnail='/media/spark.PNG'
         title='Spark'
         description='Redefined Friendmaking'
