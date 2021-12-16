@@ -29,17 +29,6 @@ const PostTemplate = ({ data }: Props) => {
   const socialImageUrl = socialImage?.publicURL;
 
   const [theme, setTheme] = useState(getTheme());
-  // useEffect(() => {
-  //   window.addEventListener('storage', (e) => {
-  //     console.log(e);
-  //     if (e.key === 'preferred-theme') {
-  //       console.log(e);
-  //     }
-  //   });
-  //   return () => {
-  //     window.removeEventListener('storage');
-  //   };
-  // }, []);
 
   deckDeckGoHighlightElement();
 
