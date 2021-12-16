@@ -12,7 +12,7 @@ import styles from './NavHeader.module.scss';
 
 const cx = classNames.bind(styles);
 
-function NavHeader() {
+function NavHeader({ onToggle }) {
   const [menuShown, setMenuShown] = useState(false);
 
   return (
@@ -25,17 +25,23 @@ function NavHeader() {
         <DisplayIf desktop className={styles['header__left']}>
           <Author />
         </DisplayIf>
-        <DisplayIf mobile className={`${styles['header__left']} ${styles['mobile']}`}>
+        <DisplayIf
+          mobile
+          className={`${styles['header__left']} ${styles['mobile']}`}
+        >
           <Author small />
         </DisplayIf>
         <DisplayIf desktop className={styles['header__right']}>
           <Menu horizontal bold />
           <div className={styles['dark-mode-toggle']}>
-            <DarkModeToggle />
+            <DarkModeToggle onToggle={onToggle} />
           </div>
         </DisplayIf>
-        <DisplayIf mobile className={`${styles['dark-mode-toggle']} ${styles['mobile']}`}>
-          <DarkModeToggle />
+        <DisplayIf
+          mobile
+          className={`${styles['dark-mode-toggle']} ${styles['mobile']}`}
+        >
+          <DarkModeToggle onToggle={onToggle} />
         </DisplayIf>
         <DisplayIf mobile>
           <button
@@ -44,7 +50,7 @@ function NavHeader() {
             }}
             className={cx({ header__burger: true, open: menuShown })}
           >
-            <Icon name="menu" icon={getIcon('menu')} />
+            <Icon name='menu' icon={getIcon('menu')} />
           </button>
         </DisplayIf>
       </div>

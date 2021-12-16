@@ -16,7 +16,7 @@ const ICONS = {
   unchecked: <img src='/media/sun.svg' alt='light mode' />,
 };
 
-const DarkModeToggle = () => {
+const DarkModeToggle = ({ onToggle }) => {
   if (typeof window === 'undefined') {
     // Never server-side render this, since we can't determine
     // the correct initial state until we get to the client.
@@ -30,6 +30,7 @@ const DarkModeToggle = () => {
       const isChecked = e.target.checked;
       setChecked(isChecked);
       setPreferredTheme(isChecked ? 'dark' : 'light');
+      onToggle(isChecked ? 'dark' : 'light');
     },
     [setChecked]
   );
