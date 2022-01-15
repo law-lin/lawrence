@@ -6,18 +6,25 @@ const ProjectCardGrid = () => {
   return (
     <div className={styles['project-card-grid']}>
       <ProjectCard
-        href='https://linktr.ee/usesparkapp'
+        href='https://apps.apple.com/us/app/onecase-social-accountability/id1604737461/'
+        thumbnail={'/media/onecase-mobile.png'}
+        title='OneCase: Social Accountability'
+        description='Hold your friends accountable!'
+        tags={['TS', 'React Native', 'Node.js', 'PostgreSQL', 'Supabase']}
+      />
+      <ProjectCard
+        href='https://apps.apple.com/us/app/spark-redefined-friendmaking/id1579999380'
         thumbnail='/media/spark.PNG'
         title='Spark'
         description='Redefined Friendmaking'
-        tags={['TS', 'React Native', 'Firebase']}
+        tags={['TS', 'React Native', 'Node.js', 'Firebase']}
       />
       <ProjectCard
-        href='https://onecase.app/lawrence'
+        href='https://github.com/law-lin/onecase-v2'
         thumbnail='/media/onecase.png'
         title='OneCase'
         description='Productive journaling with friends'
-        tags={['TS', 'React', 'Node.js', 'PostgreSQL']}
+        tags={['TS', 'React', 'Node.js', 'PostgreSQL', 'GraphQL', 'AWS']}
       />
       <ProjectCard
         href='https://usecamo.app'
