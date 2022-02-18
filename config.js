@@ -5,7 +5,7 @@ module.exports = {
   pathPrefix: '/',
   title: 'lawrencelin.me',
   subtitle:
-    'Software developer. I blog about all things web development, technology, and sometimes random philosophical ideas.',
+    'Builder of software and builder of LEGO. I write stuff about some of the tech I use in my projects.',
   copyright: '© Lawrence Lin 2021',
   disqusShortname: '',
   postsPerPage: 4,
@@ -32,8 +32,7 @@ module.exports = {
   author: {
     name: 'Lawrence Lin',
     photo: '/photo.png',
-    bio:
-      'Software developer. I blog about all things web development, technology, and sometimes random philosophical ideas.',
+    bio: 'Builder of software and builder of LEGO. I write stuff about some of the tech I use in my projects.',
     contacts: {
       email: 'lawrencelin101@gmail.com',
       facebook: '',
