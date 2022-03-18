@@ -48,14 +48,14 @@ const ProjectCardGrid = () => {
         tags={['JS', 'React.js', 'd3.js', 'Python Flask']}
       />
       <ProjectCard
-        href='https://speaclear.online'
+        href='https://csb-zmk12.netlify.app/'
         thumbnail={'/media/speaclear.PNG'}
         title='Speaclear'
         description='Improve public speaking by identifying filler word usage'
         tags={['JavaScript', 'React']}
       />
       <ProjectCard
-        href='http://minutemoji.online/'
+        href='https://emoji-of-the-minute.web.app//'
         thumbnail={'/media/emoji-of-the-minute.png'}
         title='Emoji of the Minute'
         description='Vote for the emoji of the minute!'
