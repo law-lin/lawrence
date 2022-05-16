@@ -1,7 +1,7 @@
 ---
 template: post
 title: DevStack on VirtualBox Ubuntu 20.04
-slug: postal
+slug: devstack-ubuntu
 socialImage: /media/image-1.jpg
 draft: false
 date: 2022-03-06T15:57:42.610Z
