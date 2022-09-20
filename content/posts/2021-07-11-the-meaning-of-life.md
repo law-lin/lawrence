@@ -3,7 +3,7 @@ template: post
 title: The Meaning of Life
 slug: absurdism
 socialImage: /media/absurdism.webp
-draft: false
+draft: true
 date: 2021-07-11T04:27:20.906Z
 description: Or the lack thereof.
 category: Philosophy
